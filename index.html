@@ -3,642 +3,77 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0b0b0c">
-  <meta name="description" content="Mobile car detailing from Elizabeth East, South Australia. Crystal Clear Auto Detailing brings careful interior and exterior cleaning to northern Adelaide.">
-  <meta property="og:title" content="Crystal Clear Auto Detailing | Mobile Car Detailing">
-  <meta property="og:description" content="Professional mobile detailing for northern Adelaide. Interior deep cleans, exterior washes, wheels, tyres, glass and more.">
+  <meta name="theme-color" content="#101112">
+  <meta name="description" content="Mobile car detailing from Elizabeth East, South Australia. Crystal Clear Auto Detailing provides careful interior and exterior detailing across northern Adelaide.">
+  <meta property="og:title" content="Crystal Clear Auto Detailing | Mobile Car Detailing Northern Adelaide">
+  <meta property="og:description" content="Mobile car detailing from Elizabeth East. Interior cleans, exterior washes, wheels, tyres, glass and more from $120.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_AU">
-  <title>Crystal Clear Auto Detailing | Mobile Car Detailing, Elizabeth East</title>
-
+  <title>Mobile Car Detailing Elizabeth East | Crystal Clear Auto Detailing</title>
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Crystal Clear Auto Detailing",
-    "description": "Mobile car detailing based in Elizabeth East, South Australia.",
-    "telephone": "+61401831414",
-    "priceRange": "$120+",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Elizabeth East",
-      "addressRegion": "SA",
-      "addressCountry": "AU"
-    },
-    "areaServed": "Northern suburbs of Adelaide, South Australia",
-    "sameAs": [
-      "https://www.facebook.com/share/18MyTiesBp/",
-      "https://www.google.com.au/maps/place/Crystal+Clear+Auto+Detailing/@-34.7102537,138.663486,14z/data=!4m6!3m5!1s0x7b38c3f88bc2b1d:0x5a36eefdb1bbaa89!8m2!3d-34.7292498!4d138.6776138!16s%2Fg%2F11wqf_4g8w?authuser=2&entry=ttu&g_ep=EgoyMDI2MDgwNS4xIKXMDSoASAFQAw%3D%3D"
-    ]
-  }
+  {"@context":"https://schema.org","@type":"LocalBusiness","name":"Crystal Clear Auto Detailing","description":"Mobile car detailing based in Elizabeth East, South Australia.","telephone":"+61401831414","priceRange":"$120+","address":{"@type":"PostalAddress","addressLocality":"Elizabeth East","addressRegion":"SA","addressCountry":"AU"},"areaServed":"Elizabeth East and surrounding northern Adelaide suburbs","sameAs":["https://www.facebook.com/share/18MyTiesBp/","https://www.google.com.au/maps/place/Crystal+Clear+Auto+Detailing/@-34.7102537,138.663486,14z/data=!4m6!3m5!1s0x7b38c3f88bc2b1d:0x5a36eefdb1bbaa89!8m2!3d-34.7292498!4d138.6776138!16s%2Fg%2F11wqf_4g8w?authuser=2&entry=ttu&g_ep=EgoyMDI2MDgwNS4xIKXMDSoASAFQAw%3D%3D"]}
   </script>
-
   <style>
-    :root {
-      --ink: #0b0b0c;
-      --ink-soft: #141416;
-      --paper: #f5f3ef;
-      --white: #ffffff;
-      --text: #f8f8f6;
-      --muted: #b9b8b6;
-      --dim: #8d8c8a;
-      --line: rgba(255, 255, 255, 0.13);
-      --line-strong: rgba(255, 255, 255, 0.22);
-      --red: #cf1737;
-      --red-dark: #a50d28;
-      --red-wash: rgba(207, 23, 55, 0.13);
-      --shadow: 0 24px 65px rgba(0, 0, 0, 0.3);
-      --radius: 1.25rem;
-      --container: min(1160px, calc(100% - 2rem));
-    }
-
-    * { box-sizing: border-box; }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      min-width: 320px;
-      margin: 0;
-      overflow-x: hidden;
-      background: var(--ink);
-      color: var(--text);
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      line-height: 1.5;
-    }
-
-    img { display: block; max-width: 100%; }
-    a { color: inherit; text-decoration: none; }
-    button, input, select, textarea { font: inherit; }
-    button { cursor: pointer; }
-
-    :focus-visible {
-      outline: 3px solid #ff607b;
-      outline-offset: 4px;
-    }
-
-    .container { width: var(--container); margin-inline: auto; }
-
-    .sr-only {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      white-space: nowrap;
-      border: 0;
-    }
-
-    .skip-link {
-      position: fixed;
-      z-index: 100;
-      top: -5rem;
-      left: 1rem;
-      padding: 0.75rem 1rem;
-      background: var(--white);
-      color: var(--ink);
-      border-radius: 0.45rem;
-      font-weight: 800;
-      transition: top 160ms ease;
-    }
-
-    .skip-link:focus { top: 1rem; }
-
-    .site-header {
-      position: sticky;
-      z-index: 30;
-      top: 0;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-      background: rgba(11, 11, 12, 0.94);
-      backdrop-filter: blur(14px);
-    }
-
-    .header-inner {
-      min-height: 5rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-    }
-
-    .brand {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.75rem;
-      min-width: 0;
-    }
-
-    .brand-mark {
-      position: relative;
-      display: grid;
-      width: 2.85rem;
-      height: 2.85rem;
-      flex: 0 0 auto;
-      place-items: center;
-      overflow: hidden;
-      border: 1px solid var(--line);
-      border-radius: 0.7rem;
-      background: #161618;
-    }
-
-    .brand-mark img { width: 100%; height: 100%; object-fit: contain; padding: 0.18rem; }
-
-    .brand-name { display: block; font-size: 0.88rem; font-weight: 850; letter-spacing: 0.075em; line-height: 1.1; text-transform: uppercase; white-space: nowrap; }
-    .brand-area { display: block; margin-top: 0.18rem; color: var(--muted); font-size: 0.75rem; white-space: nowrap; }
-
-    .menu-toggle { display: none; padding: 0.6rem; border: 1px solid var(--line); border-radius: 0.55rem; background: transparent; color: var(--white); }
-    .menu-toggle svg { display: block; width: 1.4rem; height: 1.4rem; }
-
-    .site-nav { display: flex; align-items: center; gap: 1.5rem; }
-    .site-nav > a:not(.button) { color: var(--muted); font-size: 0.91rem; font-weight: 700; }
-    .site-nav > a:not(.button):hover { color: var(--white); }
-
-    .button {
-      display: inline-flex;
-      min-height: 3rem;
-      align-items: center;
-      justify-content: center;
-      gap: 0.5rem;
-      padding: 0.7rem 1rem;
-      border: 1px solid transparent;
-      border-radius: 0.55rem;
-      font-size: 0.92rem;
-      font-weight: 850;
-      line-height: 1.1;
-      text-align: center;
-      transition: background 180ms ease, border-color 180ms ease, color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
-    }
-
-    .button:hover { transform: translateY(-2px); }
-    .button-primary { background: var(--red); color: var(--white); box-shadow: 0 11px 22px rgba(207, 23, 55, 0.21); }
-    .button-primary:hover { background: #e12649; box-shadow: 0 14px 26px rgba(207, 23, 55, 0.3); }
-    .button-secondary { border-color: var(--line-strong); background: transparent; color: var(--white); }
-    .button-secondary:hover { border-color: var(--white); background: rgba(255, 255, 255, 0.07); }
-    .button-quiet { border-color: var(--line); background: rgba(255, 255, 255, 0.045); color: var(--white); }
-    .button-quiet:hover { border-color: var(--line-strong); background: rgba(255, 255, 255, 0.09); }
-
-    main { overflow: hidden; }
-
-    .hero { position: relative; padding: clamp(3rem, 7vw, 6.6rem) 0 4.5rem; }
-    .hero-grid { display: grid; grid-template-columns: minmax(0, 1.04fr) minmax(22rem, 0.96fr); align-items: center; gap: clamp(2rem, 5vw, 5rem); }
-    .eyebrow { display: flex; align-items: center; gap: 0.55rem; margin: 0 0 1rem; color: #e9e7e3; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.135em; text-transform: uppercase; }
-    .eyebrow::before { width: 1.7rem; height: 2px; background: var(--red); content: ""; }
-
-    h1, h2, h3, p { margin-top: 0; }
-    h1, h2 { font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; font-weight: 900; text-transform: uppercase; }
-    h1 { max-width: 9.7ch; margin-bottom: 1.2rem; font-size: clamp(3.3rem, 8vw, 6.55rem); letter-spacing: -0.045em; line-height: 0.88; }
-    h1 .red { color: var(--red); }
-    .hero-copy > .intro { max-width: 37rem; margin-bottom: 1.7rem; color: var(--muted); font-size: clamp(1.02rem, 1.8vw, 1.16rem); line-height: 1.7; }
-    .hero-actions { display: flex; flex-wrap: wrap; gap: 0.7rem; }
-    .hero-notes { display: flex; flex-wrap: wrap; gap: 0.8rem 1.1rem; margin: 1.45rem 0 0; padding: 0; color: var(--muted); font-size: 0.88rem; list-style: none; }
-    .hero-notes li { display: flex; align-items: center; gap: 0.42rem; }
-    .hero-notes li::before { width: 0.42rem; height: 0.42rem; border-radius: 100%; background: var(--red); content: ""; }
-
-    .hero-image { position: relative; min-height: clamp(24rem, 49vw, 36rem); overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius); background: linear-gradient(135deg, #181719, #242124); box-shadow: var(--shadow); }
-    .hero-image::after { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0, 0, 0, 0.02) 45%, rgba(0, 0, 0, 0.68)); content: ""; pointer-events: none; }
-    .hero-image img { width: 100%; height: 100%; position: absolute; inset: 0; object-fit: cover; }
-    .hero-caption { position: absolute; z-index: 1; right: 1rem; bottom: 1rem; left: 1rem; display: flex; align-items: end; justify-content: space-between; gap: 1rem; padding-top: 2.5rem; }
-    .hero-caption strong { display: block; font-size: 1rem; }
-    .hero-caption span { display: block; margin-top: 0.18rem; color: #dedbd7; font-size: 0.84rem; }
-    .hero-caption .caption-tag { flex: 0 0 auto; padding: 0.42rem 0.6rem; border: 1px solid rgba(255, 255, 255, 0.25); border-radius: 0.35rem; background: rgba(12, 12, 13, 0.66); color: var(--white); font-size: 0.69rem; font-weight: 850; letter-spacing: 0.11em; text-transform: uppercase; }
-
-    .section { padding: clamp(4.5rem, 8vw, 7.5rem) 0; }
-    .section-alternate { border-block: 1px solid rgba(255, 255, 255, 0.07); background: #111113; }
-    .section-heading { display: grid; grid-template-columns: minmax(14rem, 0.8fr) minmax(18rem, 1.2fr); gap: 2rem; align-items: end; margin-bottom: 2.2rem; }
-    .section-heading h2 { max-width: 11ch; margin: 0; font-size: clamp(2.45rem, 4.8vw, 4rem); letter-spacing: -0.035em; line-height: 0.92; }
-    .section-heading p { max-width: 42rem; margin: 0; color: var(--muted); line-height: 1.7; }
-
-    .trust-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: var(--line); }
-    .trust-card { min-height: 14rem; padding: 1.7rem; background: #131315; }
-    .trust-icon { display: grid; width: 2.55rem; height: 2.55rem; margin-bottom: 1.25rem; place-items: center; border: 1px solid rgba(207, 23, 55, 0.65); border-radius: 0.55rem; background: var(--red-wash); color: var(--white); }
-    .trust-icon svg { width: 1.22rem; height: 1.22rem; }
-    .trust-card h3 { margin-bottom: 0.55rem; font-size: 1.1rem; letter-spacing: -0.02em; }
-    .trust-card p { margin: 0; color: var(--muted); font-size: 0.94rem; line-height: 1.65; }
-
-    .service-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
-    .service-card { display: flex; flex-direction: column; min-height: 100%; overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius); background: #141416; transition: transform 200ms ease, border-color 200ms ease, box-shadow 200ms ease; }
-    .service-card:hover { transform: translateY(-4px); border-color: rgba(207, 23, 55, 0.66); box-shadow: 0 18px 38px rgba(0, 0, 0, 0.22); }
-    .service-card.is-featured { border-color: rgba(207, 23, 55, 0.7); }
-    .service-topline { height: 0.28rem; background: #48464a; }
-    .is-featured .service-topline { background: var(--red); }
-    .service-card-inner { display: flex; height: 100%; flex-direction: column; padding: 1.65rem; }
-    .plan-label { display: inline-flex; width: fit-content; margin-bottom: 1rem; padding: 0.33rem 0.55rem; border: 1px solid var(--line); border-radius: 0.3rem; color: #e5e2de; font-size: 0.68rem; font-weight: 850; letter-spacing: 0.1em; text-transform: uppercase; }
-    .is-featured .plan-label { border-color: rgba(207, 23, 55, 0.55); background: var(--red-wash); }
-    .service-card h3 { margin-bottom: 0.35rem; font-size: 1.38rem; letter-spacing: -0.03em; }
-    .price { margin-bottom: 0.95rem; font-size: clamp(2.15rem, 4vw, 3rem); font-weight: 900; letter-spacing: -0.07em; line-height: 1; }
-    .price span { margin-left: 0.2rem; color: var(--muted); font-size: 0.78rem; font-weight: 700; letter-spacing: 0; }
-    .service-summary { min-height: 3.4rem; margin-bottom: 1.15rem; color: var(--muted); font-size: 0.94rem; line-height: 1.62; }
-    .service-list { display: grid; gap: 0.68rem; margin: 0 0 1.45rem; padding: 0; color: #e6e3df; font-size: 0.91rem; list-style: none; }
-    .service-list li { position: relative; padding-left: 1.35rem; line-height: 1.48; }
-    .service-list li::before { position: absolute; left: 0; color: var(--red); font-weight: 900; content: "✓"; }
-    .service-note { margin: auto 0 1.1rem; color: var(--dim); font-size: 0.8rem; line-height: 1.55; }
-    .service-card .button { width: 100%; }
-
-    .work-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 1rem; }
-    .work-card { position: relative; min-height: 17rem; grid-column: span 4; overflow: hidden; display: flex; align-items: end; border: 1px solid var(--line); border-radius: var(--radius); isolation: isolate; background: #19171a; }
-    .work-card.work-large { min-height: 24rem; grid-column: span 7; }
-    .work-card.work-tall { min-height: 24rem; grid-column: span 5; }
-    .work-card > img { position: absolute; z-index: -2; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 500ms ease; }
-    .work-card:hover > img { transform: scale(1.045); }
-    .work-card::before { position: absolute; z-index: -1; inset: 0; background: linear-gradient(180deg, rgba(0, 0, 0, 0.06) 25%, rgba(0, 0, 0, 0.83) 100%); content: ""; }
-    .work-card figcaption { width: 100%; padding: 1.15rem; }
-    .work-meta { display: block; margin-bottom: 0.32rem; color: #e5dce0; font-size: 0.68rem; font-weight: 850; letter-spacing: 0.12em; text-transform: uppercase; }
-    .work-card h3 { margin-bottom: 0.18rem; font-size: 1.08rem; }
-    .work-card p { max-width: 34ch; margin: 0; color: #e2ddd9; font-size: 0.87rem; line-height: 1.5; }
-
-    .booking-layout { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(18rem, 0.8fr); gap: 1rem; align-items: start; }
-    .booking-form-card, .contact-card { border: 1px solid var(--line); border-radius: var(--radius); background: #151517; }
-    .booking-form-card { padding: clamp(1.2rem, 3vw, 2rem); }
-    .booking-form-card h3, .contact-card h3 { margin-bottom: 0.45rem; font-size: 1.3rem; letter-spacing: -0.025em; }
-    .booking-form-card > p, .contact-card > p { margin-bottom: 1.35rem; color: var(--muted); font-size: 0.93rem; line-height: 1.65; }
-    .booking-form { display: grid; gap: 1rem; }
-    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-    .field { display: grid; gap: 0.42rem; }
-    .field label { color: #edeae5; font-size: 0.83rem; font-weight: 800; }
-    .field label span { color: var(--red); }
-    .field input, .field select, .field textarea { width: 100%; padding: 0.78rem 0.82rem; border: 1px solid var(--line-strong); border-radius: 0.45rem; outline: none; background: #0e0e10; color: var(--white); font-size: 0.95rem; transition: border-color 160ms ease, box-shadow 160ms ease; }
-    .field textarea { min-height: 7.1rem; resize: vertical; }
-    .field input::placeholder, .field textarea::placeholder { color: #868486; }
-    .field input:focus, .field select:focus, .field textarea:focus { border-color: #ff607b; box-shadow: 0 0 0 3px rgba(255, 96, 123, 0.15); }
-    .form-help { margin: -0.35rem 0 0; color: var(--dim); font-size: 0.78rem; line-height: 1.45; }
-    .form-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.9rem; margin-top: 0.15rem; }
-    .form-status { margin: 0; color: #d9d5d2; font-size: 0.86rem; line-height: 1.5; }
-    .form-status[hidden] { display: none; }
-    .form-status.success { color: #bce7c4; }
-    .form-status.error { color: #ffbac7; }
-
-    .contact-card { padding: 1.55rem; }
-    .contact-list { display: grid; margin: 0; padding: 0; list-style: none; }
-    .contact-list li { border-top: 1px solid var(--line); }
-    .contact-list a { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1rem 0; transition: color 160ms ease; }
-    .contact-list a:hover { color: #ff7e95; }
-    .contact-list strong, .contact-list span { display: block; }
-    .contact-list strong { font-size: 0.94rem; }
-    .contact-list span { margin-top: 0.15rem; color: var(--muted); font-size: 0.82rem; }
-    .contact-list .arrow { flex: 0 0 auto; margin: 0; color: var(--red); font-size: 1.25rem; }
-    .area-note { margin-top: 0.8rem; padding: 1rem; border: 1px solid rgba(207, 23, 55, 0.34); border-radius: 0.55rem; background: var(--red-wash); }
-    .area-note strong { display: block; margin-bottom: 0.2rem; font-size: 0.87rem; }
-    .area-note p { margin: 0; color: #dfd7da; font-size: 0.83rem; line-height: 1.55; }
-
-    .footer { padding: 2.2rem 0 5.9rem; border-top: 1px solid rgba(255, 255, 255, 0.08); }
-    .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
-    .footer small { color: var(--muted); font-size: 0.83rem; }
-    .footer-nav { display: flex; flex-wrap: wrap; gap: 1rem; }
-    .footer-nav a { color: var(--muted); font-size: 0.83rem; font-weight: 700; }
-    .footer-nav a:hover { color: var(--white); }
-
-    .mobile-action-bar { display: none; }
-
-    [data-reveal] { opacity: 0; transform: translateY(1.25rem); transition: opacity 600ms ease, transform 600ms ease; }
-    [data-reveal].is-visible { opacity: 1; transform: none; }
-
-    @media (max-width: 880px) {
-      .hero-grid, .section-heading, .booking-layout { grid-template-columns: 1fr; }
-      .hero-grid { gap: 2.2rem; }
-      .section-heading { gap: 0.8rem; }
-      .section-heading h2 { max-width: none; }
-      .hero-image { max-width: 45rem; }
-      .trust-card { min-height: 0; }
-      .service-grid { grid-template-columns: 1fr; max-width: 39rem; }
-      .work-card.work-large { grid-column: span 7; }
-      .work-card.work-tall { grid-column: span 5; }
-    }
-
-    @media (max-width: 660px) {
-      body { padding-bottom: 4.7rem; }
-      .header-inner { min-height: 4.6rem; }
-      .brand-name { max-width: 14rem; overflow: hidden; text-overflow: ellipsis; }
-      .brand-area { max-width: 15rem; overflow: hidden; text-overflow: ellipsis; }
-      .menu-toggle { display: block; }
-      .site-nav { position: absolute; top: calc(100% + 1px); right: 0; left: 0; display: none; padding: 0.8rem 1rem 1rem; border-bottom: 1px solid var(--line); background: #111113; box-shadow: 0 18px 25px rgba(0, 0, 0, 0.28); }
-      .site-nav.is-open { display: grid; grid-template-columns: 1fr 1fr; }
-      .site-nav > a:not(.button) { display: flex; min-height: 2.8rem; align-items: center; }
-      .site-nav .button { grid-column: span 2; margin-top: 0.25rem; }
-      h1 { font-size: clamp(3.05rem, 16vw, 4.8rem); }
-      .hero { padding-top: 2.7rem; }
-      .hero-actions { display: grid; grid-template-columns: 1fr 1fr; }
-      .hero-actions .button:first-child { grid-column: span 2; }
-      .hero-image { min-height: 25rem; }
-      .trust-grid { grid-template-columns: 1fr; }
-      .trust-card { padding: 1.35rem; }
-      .work-grid { grid-template-columns: 1fr; }
-      .work-card, .work-card.work-large, .work-card.work-tall { min-height: 19rem; grid-column: auto; }
-      .work-card.work-large, .work-card.work-tall { min-height: 22rem; }
-      .form-row { grid-template-columns: 1fr; }
-      .form-actions .button { width: 100%; }
-      .footer-inner { align-items: flex-start; flex-direction: column; }
-      .mobile-action-bar { position: fixed; z-index: 25; right: 0; bottom: 0; left: 0; display: grid; grid-template-columns: 1.25fr 0.75fr; gap: 0.6rem; padding: 0.6rem 0.8rem calc(0.6rem + env(safe-area-inset-bottom)); border-top: 1px solid var(--line); background: rgba(11, 11, 12, 0.96); backdrop-filter: blur(12px); }
-      .mobile-action-bar .button { min-height: 3.1rem; }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      html { scroll-behavior: auto; }
-      *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; }
-      [data-reveal] { opacity: 1; transform: none; }
-    }
+    :root{--ink:#101112;--ink-raised:#191a1b;--paper:#f5f3ee;--white:#fff;--text:#f7f6f3;--muted:#c3c1bc;--muted-dark:#66645f;--line:rgba(255,255,255,.16);--line-dark:rgba(16,17,18,.14);--red:#cf1737;--container:min(1180px,calc(100% - 2rem));--radius:1.1rem;--shadow:0 20px 48px rgba(0,0,0,.2)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{min-width:320px;margin:0;overflow-x:hidden;background:var(--ink);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5}img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}button{cursor:pointer}section[id]{scroll-margin-top:5.5rem}:focus-visible{outline:3px solid #ff6c86;outline-offset:4px}.container{width:var(--container);margin-inline:auto}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    .skip-link{position:fixed;z-index:100;top:-5rem;left:1rem;padding:.7rem .9rem;border-radius:.4rem;background:var(--white);color:var(--ink);font-weight:800;transition:top .15s}.skip-link:focus{top:1rem}
+    .site-header{position:sticky;z-index:40;top:0;border-bottom:1px solid rgba(255,255,255,.1);background:rgba(16,17,18,.95);backdrop-filter:blur(14px)}.header-inner{min-height:4.75rem;display:flex;align-items:center;justify-content:space-between;gap:1.25rem}.brand{display:flex;min-width:0;align-items:center;gap:.7rem}.brand-logo{width:2.75rem;height:2.75rem;flex:0 0 auto;overflow:hidden;border:1px solid var(--line);border-radius:.55rem;background:#080809}.brand-logo img{width:100%;height:100%;object-fit:contain}.brand-copy{min-width:0}.brand-copy strong{display:block;overflow:hidden;font-size:.82rem;font-weight:850;letter-spacing:.08em;line-height:1.1;text-overflow:ellipsis;text-transform:uppercase;white-space:nowrap}.brand-copy span{display:block;margin-top:.18rem;color:var(--muted);font-size:.72rem;white-space:nowrap}
+    .site-nav{display:flex;align-items:center;gap:1.5rem}.site-nav>a:not(.button){color:var(--muted);font-size:.9rem;font-weight:700}.site-nav>a:not(.button):hover{color:var(--white)}.menu-button{display:none;width:2.8rem;height:2.8rem;padding:0;border:1px solid var(--line);border-radius:.5rem;background:transparent;color:var(--white)}.menu-button svg{width:1.25rem;height:1.25rem;vertical-align:middle}
+    .button{display:inline-flex;min-height:3rem;align-items:center;justify-content:center;gap:.48rem;padding:.75rem 1.05rem;border:1px solid transparent;border-radius:.45rem;font-size:.88rem;font-weight:850;line-height:1.1;text-align:center;transition:background .18s,border-color .18s,box-shadow .18s,color .18s,transform .18s}.button:hover{transform:translateY(-2px)}.button-primary{background:var(--red);color:var(--white);box-shadow:0 10px 22px rgba(207,23,55,.22)}.button-primary:hover{background:#df2748;box-shadow:0 13px 27px rgba(207,23,55,.32)}.button-dark{border-color:var(--line);background:rgba(16,17,18,.35);color:var(--white)}.button-dark:hover{border-color:rgba(255,255,255,.65);background:rgba(16,17,18,.7)}.button-light{border-color:rgba(16,17,18,.22);background:transparent;color:var(--ink)}.button-light:hover{border-color:var(--ink);background:var(--white)}
+    .hero{position:relative;min-height:min(46rem,calc(100vh - 4.75rem));display:grid;align-items:end;overflow:hidden;background:#080809}.hero-media,.hero-media:after{position:absolute;inset:0}.hero-media img{width:100%;height:100%;object-fit:cover;object-position:center}.hero-media:after{background:linear-gradient(90deg,rgba(7,8,9,.93) 0%,rgba(7,8,9,.68) 37%,rgba(7,8,9,.12) 70%),linear-gradient(0deg,rgba(7,8,9,.82),transparent 48%);content:""}.hero-content{position:relative;z-index:1;padding:clamp(4.5rem,11vw,8.6rem) 0 clamp(3rem,6vw,5rem)}.eyebrow{display:flex;align-items:center;gap:.6rem;margin:0 0 1rem;color:#f3f0ec;font-size:.74rem;font-weight:850;letter-spacing:.12em;text-transform:uppercase}.eyebrow:before{width:1.75rem;height:2px;background:var(--red);content:""}h1,h2,h3,p{margin-top:0}h1,h2{letter-spacing:-.048em;line-height:.94}h1{max-width:10.4ch;margin-bottom:1.2rem;font-size:clamp(3.35rem,8vw,6.8rem);font-weight:900}h1 em{color:#ef3455;font-style:normal}.hero-copy{max-width:38rem;margin-bottom:1.7rem;color:#e3e0da;font-size:clamp(1rem,1.7vw,1.14rem);line-height:1.7}.hero-actions{display:flex;flex-wrap:wrap;gap:.7rem}.hero-points{display:flex;flex-wrap:wrap;gap:.7rem 1.35rem;margin:1.55rem 0 0;padding:0;color:#dfdcd7;font-size:.84rem;list-style:none}.hero-points li{display:flex;align-items:center;gap:.42rem}.hero-points li:before{width:.36rem;height:.36rem;border-radius:50%;background:var(--red);content:""}
+    .details-strip{border-bottom:1px solid var(--line-dark);background:var(--paper);color:var(--ink)}.details-grid{display:grid;grid-template-columns:repeat(3,1fr)}.detail-item{min-height:5.35rem;display:flex;align-items:center;gap:.85rem;padding:1rem 1.25rem;border-left:1px solid var(--line-dark)}.detail-item:first-child{border-left:0}.detail-number{color:var(--red);font-size:.75rem;font-weight:900;letter-spacing:.12em}.detail-item strong,.detail-item span{display:block}.detail-item strong{font-size:.88rem}.detail-item span span{margin-top:.15rem;color:var(--muted-dark);font-size:.78rem}
+    .section{padding:clamp(4.7rem,8vw,7.5rem) 0}.section-paper{background:var(--paper);color:var(--ink)}.section-dark{background:var(--ink);color:var(--text)}.section-head{display:grid;grid-template-columns:minmax(14rem,.86fr) minmax(19rem,1.14fr);gap:2rem;align-items:end;margin-bottom:clamp(2rem,4vw,3.1rem)}.section-head h2{max-width:11ch;margin:0;font-size:clamp(2.35rem,4.7vw,4.25rem);font-weight:900}.section-head p{max-width:43rem;margin:0;color:var(--muted-dark);line-height:1.7}.section-dark .section-head p{color:var(--muted)}
+    .approach-grid{display:grid;grid-template-columns:minmax(17rem,.9fr) minmax(20rem,1.1fr);gap:clamp(2rem,7vw,7rem);align-items:start}.approach-intro{max-width:34rem}.approach-intro h2{margin-bottom:1.1rem;font-size:clamp(2.3rem,4.4vw,3.8rem);font-weight:900;letter-spacing:-.05em;line-height:.96}.approach-intro p{margin:0;color:var(--muted-dark);font-size:1.02rem;line-height:1.72}.approach-list{display:grid;margin:0;padding:0;border-top:1px solid var(--line-dark);list-style:none}.approach-list li{display:grid;grid-template-columns:2.5rem 1fr;gap:1rem;padding:1.2rem 0;border-bottom:1px solid var(--line-dark)}.approach-list b{color:var(--red);font-size:.8rem;letter-spacing:.1em}.approach-list strong{display:block;margin-bottom:.22rem;font-size:1rem}.approach-list p{margin:0;color:var(--muted-dark);font-size:.92rem;line-height:1.6}
+    .service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}.service-card{display:flex;min-height:100%;flex-direction:column;padding:clamp(1.35rem,2.5vw,1.85rem);border:1px solid var(--line-dark);border-radius:var(--radius);background:rgba(255,255,255,.45);box-shadow:0 1px 0 rgba(255,255,255,.6) inset;transition:border-color .18s,box-shadow .18s,transform .18s}.service-card:hover{transform:translateY(-4px);border-color:rgba(207,23,55,.56);box-shadow:0 15px 34px rgba(35,32,29,.1)}.service-card.featured{border-color:var(--ink);background:var(--ink);color:var(--white);box-shadow:var(--shadow)}.service-label{display:flex;min-height:1.55rem;align-items:center;width:fit-content;margin-bottom:1.3rem;padding:.25rem .46rem;border:1px solid var(--line-dark);border-radius:.25rem;color:#504e4a;font-size:.67rem;font-weight:850;letter-spacing:.1em;text-transform:uppercase}.featured .service-label{border-color:rgba(255,255,255,.26);color:#f4e7e9;background:rgba(255,255,255,.07)}.service-card h3{margin-bottom:.45rem;font-size:1.35rem;letter-spacing:-.035em}.price{margin-bottom:1rem;font-size:clamp(2.25rem,4vw,3.2rem);font-weight:900;letter-spacing:-.075em;line-height:.9}.price span{margin-left:.18rem;color:var(--muted-dark);font-size:.72rem;font-weight:750;letter-spacing:0}.featured .price span{color:var(--muted)}.service-summary{min-height:3.25rem;margin-bottom:1.2rem;color:var(--muted-dark);font-size:.92rem;line-height:1.6}.featured .service-summary{color:var(--muted)}.service-list{display:grid;gap:.66rem;margin:0 0 1.35rem;padding:0;list-style:none}.service-list li{position:relative;padding-left:1.2rem;font-size:.88rem;line-height:1.48}.service-list li:before{position:absolute;left:0;color:var(--red);font-weight:900;content:"•"}.service-note{margin:auto 0 1.2rem;color:var(--muted-dark);font-size:.78rem;line-height:1.5}.featured .service-note{color:#aaa8a3}.service-card .button{width:100%}.featured .button-light{border-color:rgba(255,255,255,.25);color:var(--white)}.featured .button-light:hover{border-color:var(--white);background:rgba(255,255,255,.09)}
+    .gallery-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:.9rem}.gallery-card{position:relative;min-height:18rem;grid-column:span 4;display:flex;align-items:end;overflow:hidden;border-radius:var(--radius);background:var(--ink-raised);isolation:isolate}.gallery-card.large{min-height:29rem;grid-column:span 7}.gallery-card.tall{min-height:29rem;grid-column:span 5}.gallery-card img{position:absolute;z-index:-2;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s}.gallery-card:hover img{transform:scale(1.045)}.gallery-card:after{position:absolute;z-index:-1;inset:0;background:linear-gradient(180deg,transparent 43%,rgba(0,0,0,.82));content:""}.gallery-card figcaption{width:100%;padding:1.15rem}.gallery-card span{display:block;margin-bottom:.28rem;color:#f5dde2;font-size:.66rem;font-weight:850;letter-spacing:.11em;text-transform:uppercase}.gallery-card h3{margin:0;font-size:1rem;letter-spacing:-.02em}.gallery-card p{margin:.28rem 0 0;color:#e7e2dc;font-size:.8rem;line-height:1.48}
+    .booking-section{position:relative;overflow:hidden;background:#0d0e0f}.booking-section:before{position:absolute;top:-12rem;right:-8rem;width:32rem;height:32rem;border-radius:50%;background:rgba(207,23,55,.09);content:"";filter:blur(4px)}.booking-grid{position:relative;display:grid;grid-template-columns:minmax(17rem,.82fr) minmax(21rem,1.18fr);gap:clamp(1.3rem,4vw,4rem);align-items:start}.booking-copy{padding-top:.2rem}.booking-copy h2{max-width:8ch;margin-bottom:1.15rem;font-size:clamp(2.65rem,5vw,4.5rem);font-weight:900;letter-spacing:-.055em;line-height:.94}.booking-copy>p{max-width:32rem;margin-bottom:1.6rem;color:var(--muted);line-height:1.68}.booking-benefits{display:grid;gap:.8rem;margin:0 0 1.75rem;padding:0;list-style:none}.booking-benefits li{display:flex;align-items:start;gap:.65rem;color:#e8e5df;font-size:.9rem}.booking-benefits li:before{width:.55rem;height:.55rem;flex:0 0 auto;margin-top:.36rem;border-radius:50%;background:var(--red);content:""}.contact-options{border-top:1px solid var(--line)}.contact-options a{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.85rem 0;border-bottom:1px solid var(--line);color:var(--muted);font-size:.88rem;transition:color .16s}.contact-options a:hover{color:var(--white)}.contact-options strong{color:var(--white)}.contact-options .arrow{color:var(--red);font-size:1.12rem}
+    .form-shell{padding:clamp(1.25rem,3.2vw,2rem);border-radius:var(--radius);background:var(--paper);color:var(--ink);box-shadow:var(--shadow)}.form-shell h3{margin-bottom:.35rem;font-size:1.35rem;letter-spacing:-.035em}.form-shell>p{margin-bottom:1.35rem;color:var(--muted-dark);font-size:.9rem;line-height:1.6}.booking-form{display:grid;gap:1rem}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:.9rem}.field{display:grid;gap:.42rem}.field label{color:#353432;font-size:.78rem;font-weight:850}.field label span{color:var(--red)}.field input,.field select,.field textarea{width:100%;border:1px solid rgba(16,17,18,.2);border-radius:.38rem;outline:none;background:var(--white);color:var(--ink);font-size:.92rem;transition:border-color .15s,box-shadow .15s}.field input,.field select{min-height:2.85rem;padding:.65rem .72rem}.field textarea{min-height:6.75rem;padding:.72rem;resize:vertical}.field input::placeholder,.field textarea::placeholder{color:#8c8984}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--red);box-shadow:0 0 0 3px rgba(207,23,55,.14)}.form-helper{margin:-.2rem 0 0;color:var(--muted-dark);font-size:.76rem;line-height:1.5}.form-actions{display:flex;flex-wrap:wrap;align-items:center;gap:.8rem}.form-actions .button{min-width:12rem}.form-status{margin:0;color:#504e4a;font-size:.82rem;line-height:1.45}.form-status[hidden]{display:none}.form-status.success{color:#17652c}.form-status.error{color:#a10f2b}
+    .footer{padding:2.2rem 0 5.7rem;border-top:1px solid var(--line);background:var(--ink)}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem}.footer small{color:var(--muted);font-size:.78rem}.footer-links{display:flex;flex-wrap:wrap;gap:1rem}.footer-links a{color:var(--muted);font-size:.8rem;font-weight:700}.footer-links a:hover{color:var(--white)}.mobile-cta{display:none}[data-reveal]{opacity:0;transform:translateY(1.2rem);transition:opacity .62s,transform .62s}[data-reveal].visible{opacity:1;transform:none}
+    @media(max-width:940px){.section-head,.approach-grid,.booking-grid{grid-template-columns:1fr}.section-head{gap:.85rem}.section-head h2{max-width:14ch}.approach-grid{gap:2.2rem}.service-grid{grid-template-columns:1fr;max-width:42rem}.service-summary{min-height:0}.booking-copy h2{max-width:none}}
+    @media(max-width:700px){body{padding-bottom:4.75rem}.header-inner{min-height:4.45rem}.brand-copy strong{max-width:13.8rem}.brand-copy span{max-width:13.8rem;overflow:hidden;text-overflow:ellipsis}.menu-button{display:block}.site-nav{position:absolute;top:calc(100% + 1px);right:0;left:0;display:none;grid-template-columns:1fr 1fr;gap:0;padding:.7rem 1rem 1rem;border-bottom:1px solid var(--line);background:#171819;box-shadow:0 20px 28px rgba(0,0,0,.25)}.site-nav.open{display:grid}.site-nav>a:not(.button){display:flex;min-height:2.7rem;align-items:center}.site-nav .button{grid-column:span 2;margin-top:.3rem}.hero{min-height:39rem;align-items:end}.hero-media img{object-position:58% center}.hero-media:after{background:linear-gradient(180deg,rgba(7,8,9,.24) 0%,rgba(7,8,9,.86) 67%,rgba(7,8,9,.98) 100%)}.hero-content{padding-top:6rem}h1{font-size:clamp(3.05rem,15vw,4.7rem)}.hero-actions{display:grid;grid-template-columns:1fr 1fr}.hero-actions .button:first-child{grid-column:span 2}.hero-points{gap:.55rem 1rem}.details-grid{grid-template-columns:1fr}.detail-item{min-height:4.45rem;border-top:1px solid var(--line-dark);border-left:0}.detail-item:first-child{border-top:0}.gallery-grid{grid-template-columns:1fr}.gallery-card,.gallery-card.large,.gallery-card.tall{min-height:20rem;grid-column:auto}.gallery-card.large,.gallery-card.tall{min-height:24rem}.form-row{grid-template-columns:1fr}.form-actions .button{width:100%}.footer-inner{align-items:start;flex-direction:column}.mobile-cta{position:fixed;z-index:35;right:0;bottom:0;left:0;display:grid;grid-template-columns:1.25fr .75fr;gap:.55rem;padding:.55rem .75rem calc(.55rem + env(safe-area-inset-bottom));border-top:1px solid var(--line);background:rgba(16,17,18,.96);backdrop-filter:blur(14px)}.mobile-cta .button{min-height:3.15rem}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}[data-reveal]{opacity:1;transform:none}}
   </style>
 </head>
-
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
-
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="Crystal Clear Auto Detailing home">
-        <span class="brand-mark" aria-hidden="true">
-          <img src="images/logo.png" alt="">
-        </span>
-        <span>
-          <strong class="brand-name">Crystal Clear Auto Detailing</strong>
-          <span class="brand-area">Mobile detailing · Elizabeth East, SA</span>
-        </span>
-      </a>
-
-      <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false">
-        <span class="sr-only">Open navigation</span>
-        <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-      </button>
-
-      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
-        <a href="#services">Services</a>
-        <a href="#work">Our work</a>
-        <a href="#book">Book</a>
-        <a class="button button-primary" href="#booking-request">Request a booking</a>
-      </nav>
-    </div>
-  </header>
-
+  <header class="site-header"><div class="container header-inner">
+    <a class="brand" href="#top" aria-label="Crystal Clear Auto Detailing home"><span class="brand-logo"><img src="images/logo.png" alt="Crystal Clear Auto Detailing logo"></span><span class="brand-copy"><strong>Crystal Clear Auto Detailing</strong><span>Mobile detailing · Elizabeth East, SA</span></span></a>
+    <button class="menu-button" type="button" aria-controls="primary-navigation" aria-expanded="false"><span class="sr-only">Open navigation</span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    <nav class="site-nav" id="primary-navigation" aria-label="Primary navigation"><a href="#services">Services</a><a href="#work">Our work</a><a href="#book">Book</a><a class="button button-primary" href="#booking-request">Request a booking</a></nav>
+  </div></header>
   <main id="main-content">
-    <section class="hero" id="top" data-reveal>
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Mobile car detailing · Northern Adelaide</p>
-          <h1><span class="red">Crystal Clear</span> care, at your place.</h1>
-          <p class="intro">Professional mobile detailing for people who care about their cars. Based in Elizabeth East, we bring the equipment and the attention to give your interior and exterior a proper refresh.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#booking-request">Request a booking</a>
-            <a class="button button-secondary" href="tel:+61401831414">Call 0401 831 414</a>
-            <a class="button button-quiet" href="sms:+61401831414">Text us</a>
-          </div>
-          <ul class="hero-notes" aria-label="Service highlights">
-            <li>We come to you</li>
-            <li>Interior &amp; exterior</li>
-            <li>By appointment</li>
-          </ul>
-        </div>
-
-        <div class="hero-image">
-          <img src="images/hero-detail.jpg" alt="Freshly detailed vehicle by Crystal Clear Auto Detailing">
-          <div class="hero-caption">
-            <div><strong>A clean car without the drop-off.</strong><span>Mobile service from Elizabeth East.</span></div>
-            <span class="caption-tag">Mobile only</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alternate" aria-labelledby="why-title" data-reveal>
-      <div class="container">
-        <div class="section-heading">
-          <h2 id="why-title">The detail is in the care.</h2>
-          <p>Good detailing should be straightforward. We focus on the parts you notice every time you get in your car: clean seats and carpets, fresh interior surfaces, clear glass, tidy wheels and a properly washed exterior.</p>
-        </div>
-        <div class="trust-grid">
-          <article class="trust-card">
-            <div class="trust-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 16.5h18M5 16.5l1.5-5h11L19 16.5M8 11.5l1-3h6l1 3M6 19h.01M18 19h.01"/></svg></div>
-            <h3>Mobile and convenient</h3>
-            <p>We come to your home or suitable location, so a proper detail can fit around your day.</p>
-          </article>
-          <article class="trust-card">
-            <div class="trust-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9L12 3Z"/><path d="m19 16 .8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8L19 16Z"/></svg></div>
-            <h3>Focused on what matters</h3>
-            <p>Vacuuming, steam cleaning, stain extraction, wheels, tyres, glass and presentation—not a long list of empty extras.</p>
-          </article>
-          <article class="trust-card">
-            <div class="trust-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
-            <h3>Local northern Adelaide</h3>
-            <p>Based in Elizabeth East and generally travelling around 20 minutes to surrounding northern suburbs. Further jobs can be arranged.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="services" aria-labelledby="services-title" data-reveal>
-      <div class="container">
-        <div class="section-heading">
-          <h2 id="services-title">Choose the right clean.</h2>
-          <p>Three clear options, with no pressure to choose more than your car needs. Prices start from and may vary with vehicle size and condition. Heavily soiled vehicles may need an adjusted quote before work begins.</p>
-        </div>
-        <div class="service-grid">
-          <article class="service-card">
-            <div class="service-topline"></div>
-            <div class="service-card-inner">
-              <span class="plan-label">Maintenance refresh</span>
-              <h3>Basic Detail</h3>
-              <div class="price">$120<span>from</span></div>
-              <p class="service-summary">A proper reset for a vehicle that is generally tidy and ready for regular upkeep.</p>
-              <ul class="service-list">
-                <li>Exterior wash and dry</li>
-                <li>Wheels and tyres cleaned</li>
-                <li>Interior vacuum and wipe-down</li>
-                <li>Glass cleaned inside and out</li>
-                <li>Tyre shine and final check</li>
-              </ul>
-              <p class="service-note">A great place to start for clean everyday vehicles.</p>
-              <a class="button button-secondary service-book" href="#booking-request" data-service="Basic Detail">Request Basic Detail</a>
-            </div>
-          </article>
-
-          <article class="service-card is-featured">
-            <div class="service-topline"></div>
-            <div class="service-card-inner">
-              <span class="plan-label">Most requested</span>
-              <h3>Full Detail</h3>
-              <div class="price">$180<span>from</span></div>
-              <p class="service-summary">A more thorough inside-and-out clean for cars that need extra time and attention.</p>
-              <ul class="service-list">
-                <li>Everything in Basic Detail</li>
-                <li>Steam cleaning where suitable</li>
-                <li>Spot cleaning and light extraction</li>
-                <li>More thorough interior and wheel cleaning</li>
-                <li>Tyres dressed and windows finished</li>
-              </ul>
-              <p class="service-note">Ideal for family cars, work vehicles and daily drivers.</p>
-              <a class="button button-primary service-book" href="#booking-request" data-service="Full Detail">Request Full Detail</a>
-            </div>
-          </article>
-
-          <article class="service-card">
-            <div class="service-topline"></div>
-            <div class="service-card-inner">
-              <span class="plan-label">Deep clean</span>
-              <h3>Deluxe Detail</h3>
-              <div class="price">$250<span>from</span></div>
-              <p class="service-summary">For a more neglected vehicle, a heavy interior, or when you want a more complete reset.</p>
-              <ul class="service-list">
-                <li>Everything in Full Detail</li>
-                <li>Deep interior steam cleaning</li>
-                <li>Fabric spot extraction where needed</li>
-                <li>Wash and wax exterior finish</li>
-                <li>Extra time on neglected areas</li>
-              </ul>
-              <p class="service-note">Best for vehicles needing a serious fresh start.</p>
-              <a class="button button-secondary service-book" href="#booking-request" data-service="Deluxe Detail">Request Deluxe Detail</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alternate" id="work" aria-labelledby="work-title" data-reveal>
-      <div class="container">
-        <div class="section-heading">
-          <h2 id="work-title">Real work. Real difference.</h2>
-          <p>A selection of interior, exterior and deep-clean results from Crystal Clear Auto Detailing.</p>
-        </div>
-        <div class="work-grid">
-          <figure class="work-card work-large">
-            <img src="images/interior-before-after.jpg" alt="Before and after interior detailing result">
-            <figcaption><span class="work-meta">Before / after · Interior</span><h3>An interior you want to sit in.</h3><p>A proper interior refresh makes every drive feel better.</p></figcaption>
-          </figure>
-          <figure class="work-card work-tall">
-            <img src="images/wheels-detail.jpg" alt="Detailed clean wheels and tyres">
-            <figcaption><span class="work-meta">Wheels &amp; tyres</span><h3>Clean from the ground up.</h3><p>A sharp finish that brings the whole car together.</p></figcaption>
-          </figure>
-          <figure class="work-card">
-            <img src="images/seats-extraction.jpg" alt="Fabric car seats after stain extraction">
-            <figcaption><span class="work-meta">Steam &amp; extraction</span><h3>Freshened-up seats.</h3><p>Steam cleaning and extraction where needed.</p></figcaption>
-          </figure>
-          <figure class="work-card">
-            <img src="images/exterior-finish.jpg" alt="Clean exterior vehicle finish">
-            <figcaption><span class="work-meta">Exterior finish</span><h3>Clean, tidy, ready to drive.</h3><p>A crisp finish that feels great on the road.</p></figcaption>
-          </figure>
-          <figure class="work-card">
-            <img src="images/family-car-detail.jpg" alt="Finished family car detail">
-            <figcaption><span class="work-meta">Full detail</span><h3>A big difference for everyday cars.</h3><p>Careful work for the cars people rely on every day.</p></figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="book" aria-labelledby="book-title" data-reveal>
-      <div class="container">
-        <div class="section-heading">
-          <h2 id="book-title">Ready when you are.</h2>
-          <p>Send through a few details and your preferred time. We’ll get back to confirm the service, access requirements and final price before the appointment.</p>
-        </div>
-        <div class="booking-layout">
-          <article class="booking-form-card" id="booking-request">
-            <h3>Request a booking</h3>
-            <p>It only takes a minute. Prefer to talk it through? Call or text us instead.</p>
-            <!-- Netlify captures this form after Form detection is enabled in the Netlify dashboard. No plugin or backend is needed. -->
-            <form class="booking-form" name="booking-request" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field">
-              <input type="hidden" name="form-name" value="booking-request">
-              <p hidden><label>Don’t fill this out if you’re human: <input name="bot-field"></label></p>
-              <div class="form-row">
-                <div class="field"><label for="name">Your name <span aria-hidden="true">*</span></label><input id="name" name="name" type="text" autocomplete="name" required></div>
-                <div class="field"><label for="phone">Mobile number <span aria-hidden="true">*</span></label><input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required></div>
-              </div>
-              <div class="form-row">
-                <div class="field"><label for="suburb">Your suburb <span aria-hidden="true">*</span></label><input id="suburb" name="suburb" type="text" autocomplete="address-level2" required></div>
-                <div class="field"><label for="vehicle">Vehicle</label><input id="vehicle" name="vehicle" type="text" placeholder="e.g. 2020 Toyota RAV4"></div>
-              </div>
-              <div class="form-row">
-                <div class="field"><label for="service">Service <span aria-hidden="true">*</span></label><select id="service" name="service" required><option value="" selected disabled>Select a service</option><option>Basic Detail</option><option>Full Detail</option><option>Deluxe Detail</option><option>Not sure — please advise</option></select></div>
-                <div class="field"><label for="preferred-time">Preferred day or time</label><input id="preferred-time" name="preferred-time" type="text" placeholder="e.g. Saturday morning"></div>
-              </div>
-              <div class="field"><label for="notes">Anything we should know?</label><textarea id="notes" name="notes" placeholder="Tell us about stains, pet hair, heavy dirt, or anything else useful."></textarea></div>
-              <p class="form-help">A booking is only confirmed once we’ve replied to you.</p>
-              <div class="form-actions"><button class="button button-primary" type="submit">Send booking request</button><p class="form-status" aria-live="polite" hidden></p></div>
-            </form>
-          </article>
-
-          <aside class="contact-card">
-            <h3>Call, text or find us</h3>
-            <p>For a quick question, a text is often the easiest way to start.</p>
-            <ul class="contact-list">
-              <li><a href="tel:+61401831414"><span><strong>Call</strong><span>0401 831 414</span></span><span class="arrow" aria-hidden="true">→</span></a></li>
-              <li><a href="sms:+61401831414"><span><strong>Text</strong><span>Ask a question or request a time</span></span><span class="arrow" aria-hidden="true">→</span></a></li>
-              <li><a href="https://www.facebook.com/share/18MyTiesBp/" target="_blank" rel="noopener noreferrer"><span><strong>Facebook</strong><span>Crystal Clear Auto Detailing</span></span><span class="arrow" aria-hidden="true">↗</span></a></li>
-              <li><a href="https://www.google.com.au/maps/place/Crystal+Clear+Auto+Detailing/@-34.7102537,138.663486,14z/data=!4m6!3m5!1s0x7b38c3f88bc2b1d:0x5a36eefdb1bbaa89!8m2!3d-34.7292498!4d138.6776138!16s%2Fg%2F11wqf_4g8w?authuser=2&entry=ttu&g_ep=EgoyMDI2MDgwNS4xIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer"><span><strong>Google Maps</strong><span>View business location</span></span><span class="arrow" aria-hidden="true">↗</span></a></li>
-            </ul>
-            <div class="area-note"><strong>Service area</strong><p>Elizabeth East and surrounding northern Adelaide suburbs—usually about 20 minutes away, with further jobs considered by arrangement.</p></div>
-          </aside>
-        </div>
-      </div>
-    </section>
+    <section class="hero" id="top"><div class="hero-media"><img src="images/hero-detail.jpg" alt="Freshly detailed dark coupe in a detailing bay"></div><div class="container hero-content" data-reveal>
+      <p class="eyebrow">Mobile car detailing · Northern Adelaide</p><h1>Clearer. <em>Cleaner.</em> Ready to drive.</h1><p class="hero-copy">Crystal Clear Auto Detailing brings a careful interior and exterior clean to you. Based in Elizabeth East and servicing surrounding northern Adelaide suburbs.</p>
+      <div class="hero-actions"><a class="button button-primary" href="#booking-request">Request a booking</a><a class="button button-dark" href="tel:+61401831414">Call 0401 831 414</a><a class="button button-dark" href="sms:+61401831414">Text us</a></div>
+      <ul class="hero-points" aria-label="Service highlights"><li>We come to you</li><li>Interior &amp; exterior detailing</li><li>Details from $120</li></ul>
+    </div></section>
+    <section class="details-strip" aria-label="Business highlights"><div class="container details-grid">
+      <div class="detail-item"><span class="detail-number">01</span><span><strong>Mobile service</strong><span>No vehicle drop-off needed</span></span></div><div class="detail-item"><span class="detail-number">02</span><span><strong>Elizabeth East, SA</strong><span>Serving northern Adelaide</span></span></div><div class="detail-item"><span class="detail-number">03</span><span><strong>Clear starting prices</strong><span>Basic details from $120</span></span></div>
+    </div></section>
+    <section class="section section-paper" aria-labelledby="approach-title" data-reveal><div class="container approach-grid"><div class="approach-intro"><p class="eyebrow" style="color:#4c4945">Made for the car you use</p><h2 id="approach-title">The clean you notice every time you get in.</h2><p>Whether it is the family car, your daily driver or something you like to keep just right, the focus stays on the parts that make the biggest difference: the interior, glass, wheels, tyres and overall finish.</p></div><ol class="approach-list"><li><b>01</b><span><strong>Convenient by design</strong><p>We bring the detail to a suitable location, so you can keep your day moving.</p></span></li><li><b>02</b><span><strong>Careful interior work</strong><p>Vacuuming, wipe-downs, steam cleaning and extraction where needed for a fresher cabin.</p></span></li><li><b>03</b><span><strong>Clean finishing touches</strong><p>Exterior washing, clear glass, tidy wheels and dressed tyres complete the job.</p></span></li></ol></div></section>
+    <section class="section section-paper" id="services" aria-labelledby="services-title" data-reveal><div class="container"><div class="section-head"><h2 id="services-title">Straightforward detailing options.</h2><p>Choose the level that suits your car. All prices are starting prices and can vary with vehicle size and condition. Heavily soiled vehicles may need an adjusted quote before work begins.</p></div><div class="service-grid">
+      <article class="service-card"><span class="service-label">Maintenance refresh</span><h3>Basic Detail</h3><div class="price">$120<span>from</span></div><p class="service-summary">A tidy reset for a vehicle that is generally clean and ready for regular upkeep.</p><ul class="service-list"><li>Exterior wash and dry</li><li>Wheels and tyres cleaned</li><li>Interior vacuum and wipe-down</li><li>Glass cleaned inside and out</li><li>Tyre shine and final check</li></ul><p class="service-note">A practical choice for clean everyday vehicles.</p><a class="button button-light service-choice" href="#booking-request" data-service="Basic Detail">Request Basic Detail</a></article>
+      <article class="service-card featured"><span class="service-label">Most requested</span><h3>Full Detail</h3><div class="price">$180<span>from</span></div><p class="service-summary">A more thorough clean inside and out when your car needs extra time and attention.</p><ul class="service-list"><li>Everything in Basic Detail</li><li>Steam cleaning where suitable</li><li>Spot cleaning and light extraction</li><li>More thorough interior and wheel cleaning</li><li>Tyres dressed and windows finished</li></ul><p class="service-note">Ideal for family cars, work vehicles and daily drivers.</p><a class="button button-light service-choice" href="#booking-request" data-service="Full Detail">Request Full Detail</a></article>
+      <article class="service-card"><span class="service-label">Deep clean</span><h3>Deluxe Detail</h3><div class="price">$250<span>from</span></div><p class="service-summary">For a more neglected vehicle, a heavy interior, or when you want a more complete reset.</p><ul class="service-list"><li>Everything in Full Detail</li><li>Deep interior steam cleaning</li><li>Fabric spot extraction where needed</li><li>Wash and wax exterior finish</li><li>Extra time on neglected areas</li></ul><p class="service-note">Best for vehicles that need a more serious fresh start.</p><a class="button button-light service-choice" href="#booking-request" data-service="Deluxe Detail">Request Deluxe Detail</a></article>
+    </div></div></section>
+    <section class="section section-dark" id="work" aria-labelledby="work-title" data-reveal><div class="container"><div class="section-head"><h2 id="work-title">Real detailing, close up.</h2><p>A closer look at the kind of clean that makes a real difference—from interior refreshes to wheels, seats and exterior presentation.</p></div><div class="gallery-grid">
+      <figure class="gallery-card large"><img src="images/interior-before-after.jpg" alt="Before and after comparison of a vehicle footwell and front seat after cleaning"><figcaption><span>Interior refresh</span><h3>Before and after, side by side.</h3><p>Careful attention where it counts inside the car.</p></figcaption></figure>
+      <figure class="gallery-card tall"><img src="images/wheels-detail.jpg" alt="Close view of a clean wheel and tyre on a black BMW"><figcaption><span>Wheels &amp; tyres</span><h3>Clean from the ground up.</h3></figcaption></figure>
+      <figure class="gallery-card"><img src="images/seats-extraction.jpg" alt="Before and after comparison of a stained fabric car seat after cleaning"><figcaption><span>Steam &amp; extraction</span><h3>Freshened-up fabric seats.</h3></figcaption></figure>
+      <figure class="gallery-card"><img src="images/exterior-finish.jpg" alt="Blue sports car photographed after exterior detailing"><figcaption><span>Exterior finish</span><h3>Clean, tidy, ready to drive.</h3></figcaption></figure>
+      <figure class="gallery-card"><img src="images/family-car-detail.jpg" alt="Silver SUV photographed after exterior detailing"><figcaption><span>Full detail</span><h3>A big difference for everyday cars.</h3></figcaption></figure>
+    </div></div></section>
+    <section class="section booking-section" id="book" aria-labelledby="booking-title" data-reveal><div class="container booking-grid"><div class="booking-copy"><p class="eyebrow">Simple next step</p><h2 id="booking-title">Request your detail.</h2><p>Send through a few details and a preferred time. We will reply to confirm the service, access requirements and final price before your appointment.</p><ul class="booking-benefits"><li>Request a time that works for you</li><li>Tell us about stains, pet hair or heavy dirt</li><li>Get the details confirmed before the job</li></ul><div class="contact-options" aria-label="Alternative contact methods"><a href="tel:+61401831414"><span><strong>Call</strong> · 0401 831 414</span><span class="arrow" aria-hidden="true">→</span></a><a href="sms:+61401831414"><span><strong>Text</strong> · Ask a quick question</span><span class="arrow" aria-hidden="true">→</span></a><a href="https://www.facebook.com/share/18MyTiesBp/" target="_blank" rel="noopener noreferrer"><span><strong>Facebook</strong> · Crystal Clear Auto Detailing</span><span class="arrow" aria-hidden="true">↗</span></a><a href="https://www.google.com.au/maps/place/Crystal+Clear+Auto+Detailing/@-34.7102537,138.663486,14z/data=!4m6!3m5!1s0x7b38c3f88bc2b1d:0x5a36eefdb1bbaa89!8m2!3d-34.7292498!4d138.6776138!16s%2Fg%2F11wqf_4g8w?authuser=2&entry=ttu&g_ep=EgoyMDI2MDgwNS4xIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer"><span><strong>Google Maps</strong> · View business location</span><span class="arrow" aria-hidden="true">↗</span></a></div></div>
+      <article class="form-shell" id="booking-request"><h3>Booking request</h3><p>We will confirm your booking request before the appointment is locked in.</p><form class="booking-form" name="booking-request" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field"><input type="hidden" name="form-name" value="booking-request"><p hidden><label>Do not fill this out if you are human: <input name="bot-field"></label></p><div class="form-row"><div class="field"><label for="name">Your name <span aria-hidden="true">*</span></label><input id="name" name="name" type="text" autocomplete="name" required></div><div class="field"><label for="phone">Mobile number <span aria-hidden="true">*</span></label><input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required></div></div><div class="form-row"><div class="field"><label for="suburb">Your suburb <span aria-hidden="true">*</span></label><input id="suburb" name="suburb" type="text" autocomplete="address-level2" required></div><div class="field"><label for="vehicle">Vehicle</label><input id="vehicle" name="vehicle" type="text" placeholder="e.g. 2020 Toyota RAV4"></div></div><div class="form-row"><div class="field"><label for="service">Service <span aria-hidden="true">*</span></label><select id="service" name="service" required><option value="" selected disabled>Select a service</option><option>Basic Detail</option><option>Full Detail</option><option>Deluxe Detail</option><option>Not sure — please advise</option></select></div><div class="field"><label for="preferred-time">Preferred day or time</label><input id="preferred-time" name="preferred-time" type="text" placeholder="e.g. Saturday morning"></div></div><div class="field"><label for="notes">Anything we should know?</label><textarea id="notes" name="notes" placeholder="Stains, pet hair, heavy dirt or any other useful details."></textarea></div><p class="form-helper">Submitting this form sends a request only. We will reply to confirm the details.</p><div class="form-actions"><button class="button button-primary" type="submit">Send booking request</button><p class="form-status" aria-live="polite" hidden></p></div></form></article>
+    </div></section>
   </main>
-
-  <footer class="footer">
-    <div class="container footer-inner">
-      <small>© <span id="year"></span> Crystal Clear Auto Detailing · Elizabeth East, South Australia</small>
-      <nav class="footer-nav" aria-label="Footer navigation"><a href="#services">Services</a><a href="#work">Our work</a><a href="#booking-request">Book now</a></nav>
-    </div>
-  </footer>
-
-  <div class="mobile-action-bar" aria-label="Quick actions">
-    <a class="button button-primary" href="#booking-request">Request a booking</a>
-    <a class="button button-secondary" href="tel:+61401831414">Call now</a>
-  </div>
-
+  <footer class="footer"><div class="container footer-inner"><small>© <span id="year"></span> Crystal Clear Auto Detailing · Elizabeth East, South Australia</small><nav class="footer-links" aria-label="Footer navigation"><a href="#services">Services</a><a href="#work">Our work</a><a href="#booking-request">Request a booking</a></nav></div></footer>
+  <div class="mobile-cta" aria-label="Quick actions"><a class="button button-primary" href="#booking-request">Request a booking</a><a class="button button-dark" href="tel:+61401831414">Call now</a></div>
   <script>
-    const menuButton = document.querySelector(".menu-toggle");
-    const nav = document.querySelector(".site-nav");
-    menuButton.addEventListener("click", () => {
-      const open = nav.classList.toggle("is-open");
-      menuButton.setAttribute("aria-expanded", String(open));
-    });
-    nav.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => {
-      nav.classList.remove("is-open");
-      menuButton.setAttribute("aria-expanded", "false");
-    }));
-
-    const serviceSelect = document.querySelector("#service");
-    document.querySelectorAll(".service-book").forEach((button) => button.addEventListener("click", () => {
-      serviceSelect.value = button.dataset.service;
-    }));
-
-    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const revealItems = document.querySelectorAll("[data-reveal]");
-    if (reduceMotion || !("IntersectionObserver" in window)) {
-      revealItems.forEach((item) => item.classList.add("is-visible"));
-    } else {
-      const revealObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("is-visible");
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.12 });
-      revealItems.forEach((item) => revealObserver.observe(item));
-    }
-
-    const form = document.querySelector(".booking-form");
-    const status = document.querySelector(".form-status");
-    form.addEventListener("submit", async (event) => {
-      event.preventDefault();
-      const submitButton = form.querySelector("button[type='submit']");
-      submitButton.disabled = true;
-      submitButton.textContent = "Sending…";
-      status.hidden = true;
-      try {
-        await fetch("/", { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: new URLSearchParams(new FormData(form)).toString() });
-        form.reset();
-        status.textContent = "Thanks — your booking request has been sent. We’ll be in touch to confirm it.";
-        status.className = "form-status success";
-      } catch (error) {
-        status.textContent = "We couldn’t send that just now. Please call or text 0401 831 414.";
-        status.className = "form-status error";
-      } finally {
-        status.hidden = false;
-        submitButton.disabled = false;
-        submitButton.textContent = "Send booking request";
-      }
-    });
-
-    document.querySelector("#year").textContent = new Date().getFullYear();
+    const menuButton=document.querySelector(".menu-button");const navigation=document.querySelector(".site-nav");const closeNavigation=()=>{navigation.classList.remove("open");menuButton.setAttribute("aria-expanded","false")};menuButton.addEventListener("click",()=>{const isOpen=navigation.classList.toggle("open");menuButton.setAttribute("aria-expanded",String(isOpen))});navigation.querySelectorAll("a").forEach(link=>link.addEventListener("click",closeNavigation));
+    const serviceField=document.querySelector("#service");document.querySelectorAll(".service-choice").forEach(button=>button.addEventListener("click",()=>{serviceField.value=button.dataset.service}));
+    const reducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches;const revealItems=document.querySelectorAll("[data-reveal]");if(reducedMotion||!("IntersectionObserver" in window)){revealItems.forEach(item=>item.classList.add("visible"))}else{const revealObserver=new IntersectionObserver((entries,observer)=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("visible");observer.unobserve(entry.target)}})},{threshold:.12});revealItems.forEach(item=>revealObserver.observe(item))}
+    const bookingForm=document.querySelector(".booking-form");const formStatus=document.querySelector(".form-status");bookingForm.addEventListener("submit",async event=>{event.preventDefault();const submitButton=bookingForm.querySelector("button[type='submit']");submitButton.disabled=true;submitButton.textContent="Sending…";formStatus.hidden=true;try{await fetch("/",{method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded"},body:new URLSearchParams(new FormData(bookingForm)).toString()});bookingForm.reset();formStatus.textContent="Thanks — your booking request has been sent. We will be in touch to confirm it.";formStatus.className="form-status success"}catch(error){formStatus.textContent="We could not send that just now. Please call or text 0401 831 414.";formStatus.className="form-status error"}finally{formStatus.hidden=false;submitButton.disabled=false;submitButton.textContent="Send booking request"}});document.querySelector("#year").textContent=new Date().getFullYear();
   </script>
 </body>
 </html>
