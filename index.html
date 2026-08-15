@@ -142,9 +142,7 @@
       background: #161618;
     }
 
-    .brand-mark img { position: relative; z-index: 1; width: 100%; height: 100%; object-fit: contain; padding: 0.18rem; }
-    .brand-mark .brand-fallback { position: absolute; color: var(--red); font-size: 1.15rem; font-weight: 950; letter-spacing: -0.12em; }
-    .image-missing { display: none !important; }
+    .brand-mark img { width: 100%; height: 100%; object-fit: contain; padding: 0.18rem; }
 
     .brand-name { display: block; font-size: 0.88rem; font-weight: 850; letter-spacing: 0.075em; line-height: 1.1; text-transform: uppercase; white-space: nowrap; }
     .brand-area { display: block; margin-top: 0.18rem; color: var(--muted); font-size: 0.75rem; white-space: nowrap; }
@@ -200,8 +198,6 @@
     .hero-image { position: relative; min-height: clamp(24rem, 49vw, 36rem); overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius); background: linear-gradient(135deg, #181719, #242124); box-shadow: var(--shadow); }
     .hero-image::after { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0, 0, 0, 0.02) 45%, rgba(0, 0, 0, 0.68)); content: ""; pointer-events: none; }
     .hero-image img { width: 100%; height: 100%; position: absolute; inset: 0; object-fit: cover; }
-    .hero-image .photo-placeholder { position: absolute; inset: 0; display: grid; place-items: center; color: #aaa5a8; font-size: 0.8rem; font-weight: 800; letter-spacing: 0.12em; text-align: center; text-transform: uppercase; background: radial-gradient(circle at 80% 10%, rgba(207, 23, 55, 0.28), transparent 25%), linear-gradient(135deg, #242124, #0d0d0e 72%); }
-    .hero-image img:not(.image-missing) + .photo-placeholder { display: none; }
     .hero-caption { position: absolute; z-index: 1; right: 1rem; bottom: 1rem; left: 1rem; display: flex; align-items: end; justify-content: space-between; gap: 1rem; padding-top: 2.5rem; }
     .hero-caption strong { display: block; font-size: 1rem; }
     .hero-caption span { display: block; margin-top: 0.18rem; color: #dedbd7; font-size: 0.84rem; }
@@ -246,13 +242,10 @@
     .work-card > img { position: absolute; z-index: -2; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 500ms ease; }
     .work-card:hover > img { transform: scale(1.045); }
     .work-card::before { position: absolute; z-index: -1; inset: 0; background: linear-gradient(180deg, rgba(0, 0, 0, 0.06) 25%, rgba(0, 0, 0, 0.83) 100%); content: ""; }
-    .work-placeholder { position: absolute; z-index: -2; inset: 0; display: grid; place-items: center; color: #a29a9f; font-size: 0.7rem; font-weight: 850; letter-spacing: 0.12em; text-transform: uppercase; background: radial-gradient(circle at 90% 5%, rgba(207, 23, 55, 0.26), transparent 22%), linear-gradient(135deg, #242024, #111113); }
-    .work-card > img:not(.image-missing) + .work-placeholder { display: none; }
     .work-card figcaption { width: 100%; padding: 1.15rem; }
     .work-meta { display: block; margin-bottom: 0.32rem; color: #e5dce0; font-size: 0.68rem; font-weight: 850; letter-spacing: 0.12em; text-transform: uppercase; }
     .work-card h3 { margin-bottom: 0.18rem; font-size: 1.08rem; }
     .work-card p { max-width: 34ch; margin: 0; color: #e2ddd9; font-size: 0.87rem; line-height: 1.5; }
-    .gallery-note { margin: 1.1rem 0 0; color: var(--dim); font-size: 0.85rem; line-height: 1.55; }
 
     .booking-layout { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(18rem, 0.8fr); gap: 1rem; align-items: start; }
     .booking-form-card, .contact-card { border: 1px solid var(--line); border-radius: var(--radius); background: #151517; }
@@ -354,9 +347,7 @@
     <div class="container header-inner">
       <a class="brand" href="#top" aria-label="Crystal Clear Auto Detailing home">
         <span class="brand-mark" aria-hidden="true">
-          <!-- Add your transparent logo at images/logo.png. The CC mark shows until then. -->
-          <img src="images/logo.png" alt="" onerror="this.classList.add('image-missing')">
-          <span class="brand-fallback">CC</span>
+          <img src="images/logo.png" alt="">
         </span>
         <span>
           <strong class="brand-name">Crystal Clear Auto Detailing</strong>
@@ -398,9 +389,7 @@
         </div>
 
         <div class="hero-image">
-          <!-- Replace this with your strongest horizontal finished-car photo. -->
-          <img src="images/hero-detail.jpg" alt="Freshly detailed vehicle by Crystal Clear Auto Detailing" onerror="this.classList.add('image-missing')">
-          <div class="photo-placeholder" aria-hidden="true">Add your best finished-car photo<br>images/hero-detail.jpg</div>
+          <img src="images/hero-detail.jpg" alt="Freshly detailed vehicle by Crystal Clear Auto Detailing">
           <div class="hero-caption">
             <div><strong>A clean car without the drop-off.</strong><span>Mobile service from Elizabeth East.</span></div>
             <span class="caption-tag">Mobile only</span>
@@ -506,36 +495,30 @@
       <div class="container">
         <div class="section-heading">
           <h2 id="work-title">Real work. Real difference.</h2>
-          <p>Your own high-quality photos should do the convincing here. Add photos with the filenames in the comments below, or update each image path to match the files you put in your <code>images</code> folder.</p>
+          <p>A selection of interior, exterior and deep-clean results from Crystal Clear Auto Detailing.</p>
         </div>
         <div class="work-grid">
           <figure class="work-card work-large">
-            <img src="images/interior-before-after.jpg" alt="Before and after interior detailing result" onerror="this.classList.add('image-missing')">
-            <div class="work-placeholder" aria-hidden="true">Add images/interior-before-after.jpg</div>
-            <figcaption><span class="work-meta">Before / after · Interior</span><h3>An interior you want to sit in.</h3><p>Show the difference a proper interior refresh can make.</p></figcaption>
+            <img src="images/interior-before-after.jpg" alt="Before and after interior detailing result">
+            <figcaption><span class="work-meta">Before / after · Interior</span><h3>An interior you want to sit in.</h3><p>A proper interior refresh makes every drive feel better.</p></figcaption>
           </figure>
           <figure class="work-card work-tall">
-            <img src="images/wheels-detail.jpg" alt="Detailed clean wheels and tyres" onerror="this.classList.add('image-missing')">
-            <div class="work-placeholder" aria-hidden="true">Add images/wheels-detail.jpg</div>
-            <figcaption><span class="work-meta">Wheels &amp; tyres</span><h3>Clean from the ground up.</h3><p>Use a crisp wheel and tyre finish photo.</p></figcaption>
+            <img src="images/wheels-detail.jpg" alt="Detailed clean wheels and tyres">
+            <figcaption><span class="work-meta">Wheels &amp; tyres</span><h3>Clean from the ground up.</h3><p>A sharp finish that brings the whole car together.</p></figcaption>
           </figure>
           <figure class="work-card">
-            <img src="images/seats-extraction.jpg" alt="Fabric car seats after stain extraction" onerror="this.classList.add('image-missing')">
-            <div class="work-placeholder" aria-hidden="true">Add images/seats-extraction.jpg</div>
-            <figcaption><span class="work-meta">Steam &amp; extraction</span><h3>Freshened-up seats.</h3><p>Show a genuine seat-cleaning result.</p></figcaption>
+            <img src="images/seats-extraction.jpg" alt="Fabric car seats after stain extraction">
+            <figcaption><span class="work-meta">Steam &amp; extraction</span><h3>Freshened-up seats.</h3><p>Steam cleaning and extraction where needed.</p></figcaption>
           </figure>
           <figure class="work-card">
-            <img src="images/exterior-finish.jpg" alt="Clean exterior vehicle finish" onerror="this.classList.add('image-missing')">
-            <div class="work-placeholder" aria-hidden="true">Add images/exterior-finish.jpg</div>
-            <figcaption><span class="work-meta">Exterior finish</span><h3>Clean, tidy, ready to drive.</h3><p>A sharp exterior shot in good light works best.</p></figcaption>
+            <img src="images/exterior-finish.jpg" alt="Clean exterior vehicle finish">
+            <figcaption><span class="work-meta">Exterior finish</span><h3>Clean, tidy, ready to drive.</h3><p>A crisp finish that feels great on the road.</p></figcaption>
           </figure>
           <figure class="work-card">
-            <img src="images/family-car-detail.jpg" alt="Finished family car detail" onerror="this.classList.add('image-missing')">
-            <div class="work-placeholder" aria-hidden="true">Add images/family-car-detail.jpg</div>
-            <figcaption><span class="work-meta">Full detail</span><h3>A big difference for everyday cars.</h3><p>Real local work creates real confidence.</p></figcaption>
+            <img src="images/family-car-detail.jpg" alt="Finished family car detail">
+            <figcaption><span class="work-meta">Full detail</span><h3>A big difference for everyday cars.</h3><p>Careful work for the cars people rely on every day.</p></figcaption>
           </figure>
         </div>
-        <p class="gallery-note">Tip: use your own photos, crop them consistently, and keep the best vehicle photo in the first tile. Avoid stock imagery—it makes a local detailing business feel less personal.</p>
       </div>
     </section>
 
@@ -600,11 +583,6 @@
   </div>
 
   <script>
-    document.querySelectorAll("img").forEach((image) => {
-      if (image.complete && image.naturalWidth === 0) image.classList.add("image-missing");
-      image.addEventListener("error", () => image.classList.add("image-missing"));
-    });
-
     const menuButton = document.querySelector(".menu-toggle");
     const nav = document.querySelector(".site-nav");
     menuButton.addEventListener("click", () => {
